@@ -85,7 +85,7 @@ export default function Contact() {
                     name="email"
                     required
                     className="w-full bg-darker border border-border rounded-lg px-4 py-3 text-sm text-white placeholder:text-muted/60 focus:outline-none focus:border-accent transition-colors"
-                    placeholder="tu@empresa.com"
+                    placeholder="contactos@devnation593.com"
                   />
                 </div>
                 <div>
@@ -130,7 +130,7 @@ export default function Contact() {
             <div className="space-y-6">
               {/* Email */}
               <a
-                href="mailto:hello@devnation593.com"
+                href="mailto:contactos@devnation593.com"
                 className="flex items-center gap-4 group"
               >
                 <div className="w-12 h-12 bg-card border border-border rounded-xl flex items-center justify-center group-hover:border-accent/40 transition-colors">
@@ -138,7 +138,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-medium">Correo</p>
-                  <p className="text-muted text-sm">hello@devnation593.com</p>
+                  <p className="text-muted text-sm">contactos@devnation593.com</p>
                 </div>
               </a>
 
