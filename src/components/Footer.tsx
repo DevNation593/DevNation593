@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="mt-5 space-y-3">
               <div className="flex items-start gap-3">
                 <Icon icon="tabler:map-pin" className="w-4 h-4 text-accent mt-0.5 shrink-0" />
-                <p className="text-muted text-sm">Guayaquil, Ecuador</p>
+                <p className="text-muted text-sm">Quito, Ecuador</p>
               </div>
               <div className="flex items-center gap-3">
                 <Icon icon="tabler:mail" className="w-4 h-4 text-accent shrink-0" />
