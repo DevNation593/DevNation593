@@ -24,8 +24,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Icon icon="tabler:mail" className="w-4 h-4 text-accent shrink-0" />
-                <a href="mailto:hello@devnation593.com" className="text-muted text-sm hover:text-white transition-colors">
-                  hello@devnation593.com
+                <a href="mailto:contactos@devnation593.com" className="text-muted text-sm hover:text-white transition-colors">
+                  contactos@devnation593.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -43,6 +43,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 { href: "#about", label: "Nosotros" },
+                { href: "#mission-vision", label: "Misión y Visión" },
                 { href: "#services", label: "Servicios" },
                 { href: "#technologies", label: "Tecnologías" },
                 { href: "#portfolio", label: "Portafolio" },
@@ -83,18 +84,23 @@ export default function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-muted text-sm hover:text-white transition-colors">
+                <a href="/politica-privacidad" className="text-muted text-sm hover:text-white transition-colors">
                   Política de Privacidad
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted text-sm hover:text-white transition-colors">
+                <a href="/terminos-condiciones" className="text-muted text-sm hover:text-white transition-colors">
                   Términos y Condiciones
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted text-sm hover:text-white transition-colors">
+                <a href="/politica-cookies" className="text-muted text-sm hover:text-white transition-colors">
                   Política de Cookies
+                </a>
+              </li>
+              <li>
+                <a href="/proteccion-datos" className="text-muted text-sm hover:text-white transition-colors">
+                  Protección de Datos
                 </a>
               </li>
             </ul>
