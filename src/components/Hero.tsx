@@ -52,7 +52,7 @@ export default function Hero() {
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="#contact"
+            href="/contacto"
             className="w-full sm:w-auto bg-accent hover:bg-accent-hover text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-accent/25"
           >
             Inicia Tu Proyecto

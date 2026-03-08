@@ -43,12 +43,11 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 { href: "#about", label: "Nosotros" },
-                { href: "#mission-vision", label: "Misión y Visión" },
+                { href: "/mision-vision", label: "Misión y Visión" },
                 { href: "#services", label: "Servicios" },
-                { href: "#technologies", label: "Tecnologías" },
-                { href: "#portfolio", label: "Portafolio" },
+                { href: "/portafolio", label: "Portafolio" },
                 { href: "#why-us", label: "¿Por qué elegirnos?" },
-                { href: "#contact", label: "Contacto" },
+                { href: "/contacto", label: "Contacto" },
               ].map((link) => (
                 <li key={link.href}>
                   <a href={link.href} className="text-muted text-sm hover:text-white transition-colors">
@@ -138,7 +137,31 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* Technologies Strip */}
+        <div className="mt-12 pt-8 border-t border-border">
+          <p className="text-xs text-muted uppercase tracking-wider font-semibold mb-4 text-center">Tecnologías que usamos</p>
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            {[
+              { name: "Node.js", color: "#339933", iconName: "simple-icons:nodedotjs" },
+              { name: "Next.js", color: "#FFFFFF", iconName: "simple-icons:nextdotjs" },
+              { name: "Docker", color: "#2496ED", iconName: "simple-icons:docker" },
+              { name: "AWS", color: "#FF9900", iconName: "simple-icons:amazonwebservices" },
+              { name: "PostgreSQL", color: "#4169E1", iconName: "simple-icons:postgresql" },
+              { name: "MongoDB", color: "#47A248", iconName: "simple-icons:mongodb" },
+            ].map((tech) => (
+              <div
+                key={tech.name}
+                className="flex items-center gap-2 text-muted hover:text-white transition-colors"
+                title={tech.name}
+              >
+                <Icon icon={tech.iconName} className="w-5 h-5" style={{ color: tech.color }} />
+                <span className="text-xs font-medium">{tech.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-muted text-sm">
             &copy; {currentYear} DevNation593. Todos los derechos reservados.
           </p>

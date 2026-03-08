@@ -5,10 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { href: "#about", label: "Nosotros" },
-  { href: "#mission-vision", label: "Misión y Visión" },
+  { href: "/mision-vision", label: "Misión y Visión" },
   { href: "#services", label: "Servicios" },
-  { href: "#technologies", label: "Tecnologías" },
-  { href: "#portfolio", label: "Portafolio" },
+  { href: "/portafolio", label: "Portafolio" },
   { href: "#why-us", label: "¿Por qué elegirnos?" },
 ];
 
@@ -50,7 +49,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/contacto"
             className="bg-accent hover:bg-accent-hover text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors duration-200"
           >
             Contáctanos
@@ -99,7 +98,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#contact"
+                href="/contacto"
                 onClick={() => setMobileOpen(false)}
                 className="bg-accent hover:bg-accent-hover text-white text-sm font-medium px-5 py-2.5 rounded-lg text-center transition-colors"
               >
