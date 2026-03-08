@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { href: "#about", label: "Nosotros" },
+  { href: "/#about", label: "Nosotros" },
   { href: "/mision-vision", label: "Misión y Visión" },
-  { href: "#services", label: "Servicios" },
+  { href: "/#services", label: "Servicios" },
   { href: "/portafolio", label: "Portafolio" },
-  { href: "#why-us", label: "¿Por qué elegirnos?" },
+  { href: "/#why-us", label: "¿Por qué elegirnos?" },
 ];
 
 export default function Navbar() {
@@ -33,7 +33,7 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold tracking-tight">
+        <a href="/" className="text-xl font-bold tracking-tight">
           Dev<span className="text-accent">Nation</span>593
         </a>
 

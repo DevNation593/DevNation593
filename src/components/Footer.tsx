@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand & Dirección */}
           <div>
-            <a href="#" className="text-xl font-bold tracking-tight">
+            <a href="/" className="text-xl font-bold tracking-tight">
               Dev<span className="text-accent">Nation</span>593
             </a>
             <p className="mt-3 text-muted text-sm leading-relaxed">
@@ -42,11 +42,11 @@ export default function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">Navegación</h4>
             <ul className="space-y-3">
               {[
-                { href: "#about", label: "Nosotros" },
+                { href: "/#about", label: "Nosotros" },
                 { href: "/mision-vision", label: "Misión y Visión" },
-                { href: "#services", label: "Servicios" },
+                { href: "/#services", label: "Servicios" },
                 { href: "/portafolio", label: "Portafolio" },
-                { href: "#why-us", label: "¿Por qué elegirnos?" },
+                { href: "/#why-us", label: "¿Por qué elegirnos?" },
                 { href: "/contacto", label: "Contacto" },
               ].map((link) => (
                 <li key={link.href}>
